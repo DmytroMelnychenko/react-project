@@ -12,8 +12,8 @@ function App() {
                 <Header/>
                 <Routes>
                     <Route index element={<Home />}></Route>
-                    <Route path="movie/:id" element={<h1>Movie datail page</h1>}></Route>
-                    <Route path="movies/:type" element={<h1>Movies list page</h1>}></Route>
+                    <Route path="movie/:id" element={<Movie/>}></Route>
+                    <Route path="movies/:type" element={<MovieList/>}></Route>
                     <Route path="/*" element={<h1>Error Page</h1>}></Route>
                 </Routes>
             </Router>
